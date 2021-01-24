@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  background-color: #222;
+  padding: 4px 10px;
+  color: #fff;
+
+  nav {
+    position: relative;
+    overflow: hidden;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: #ddd;
+      }
+    }
+
+    .titleApp {
+      display: inline-block;
+    }
+
+    .uProfile {
+      position: relative;
+      float: right;
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  padding: 6px 10px 10px 10px;
+  min-height: calc(100vh - 28px - 28px);
+}
+
+.footer {
+  width: 100%;
+  background-color: #eee;
+  padding: 4px 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+}
