@@ -1,4 +1,4 @@
-.header {
+header {
   width: 100%;
   background-color: #222;
   padding: 4px 10px;
@@ -17,11 +17,11 @@
       }
     }
 
-    .titleApp {
+    .app-title {
       display: inline-block;
     }
 
-    .uProfile {
+    .user-profile {
       position: relative;
       float: right;
 
@@ -32,13 +32,79 @@
   }
 }
 
-.main {
+main {
   width: 100%;
   padding: 6px 10px 10px 10px;
   min-height: calc(100vh - 28px - 28px);
+
+  .app-topic {
+    margin: 17px 0 0 0;
+
+    &:first-child {
+      margin: 12px 0 0 0;
+    }
+
+    a {
+      color: #4a4a4a;
+      text-decoration: none;
+
+      &:hover {
+        color: #000;
+        background-color: #e8e8e8;
+      }
+    }
+
+    .badge-ctn {
+      width: auto;
+      position: relative;
+      top: -6px;
+      left: -6px;
+
+      .badge {
+        padding: 3px 6px 1px 6px;
+        margin: 0 3px;
+        background-color: #ffeb3b;
+        border-radius: 3px;
+        font-family: "th_sarabun_new_italic";
+        font-size: 16px;
+        color: #868686;
+        display: inline-flex;
+
+        a {
+          background-color: inherit;
+          color: inherit;
+
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+    }
+
+    .label-ctn {
+      width: auto;
+      position: relative;
+      left: -4px;
+
+      .label {
+        margin: 0 4px;
+
+        a {
+          background-color: inherit;
+          font-family: 'th_sarabun_new_italic';
+          font-size: 16px;
+          color: #aaa;
+
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+    }
+  }
 }
 
-.footer {
+footer {
   width: 100%;
   background-color: #eee;
   padding: 4px 10px;
@@ -46,5 +112,5 @@
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1024px;
 }
