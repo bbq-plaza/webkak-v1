@@ -10,66 +10,40 @@
 
 <main>
   <div class="container">
-    <article class="app-topic">
-      <div class="badge-ctn">
-        <label class="badge">Badge A</label>
-        <label class="badge">Badge B</label>
-        <label class="badge">Badge C</label>
-      </div>
-      <h2>
-        <a>Velit esse esse eu excepteur id cillum minim. Quis consequat labore excepteur veniam culpa aliquip ut veniam tempor aliqua cillum id.</a>
-      </h2>
-      <div class="label-ctn">
-        <label class="label"><a>Label A</a></label>
-        <label class="label"><a>Label B</a></label>
-        <label class="label"><a>Label C</a></label>
-      </div>
-    </article>
-    <article class="app-topic">
-      <div class="badge-ctn">
-        <label class="badge">Badge A</label>
-        <label class="badge">Badge B</label>
-        <label class="badge">Badge C</label>
-      </div>
-      <h2>
-        <a>Velit esse esse eu excepteur id cillum minim. Minim occaecat consequat labore anim dolor voluptate irure consectetur commodo dolor dolore labore ullamco. Ut tempor nisi et quis magna non.</a>
-      </h2>
-      <div class="label-ctn">
-        <label class="label"><a>Label A</a></label>
-        <label class="label"><a>Label B</a></label>
-        <label class="label"><a>Label C</a></label>
-      </div>
-    </article>
-    <article class="app-topic">
-      <div class="badge-ctn">
-        <label class="badge">Badge A</label>
-        <label class="badge">Badge B</label>
-        <label class="badge">Badge C</label>
-      </div>
-      <h2>
-        <a>Minim occaecat consequat labore anim dolor voluptate irure consectetur commodo dolor dolore labore ullamco. Ut tempor nisi et quis magna non.</a>
-      </h2>
-      <div class="label-ctn">
-        <label class="label"><a>Label A</a></label>
-        <label class="label"><a>Label B</a></label>
-        <label class="label"><a>Label C</a></label>
-      </div>
-    </article>
-    <article class="app-topic">
-      <div class="badge-ctn">
-        <label class="badge">Badge A</label>
-        <label class="badge">Badge B</label>
-        <label class="badge">Badge C</label>
-      </div>
-      <h2>
-        <a>Minim occaecat consequat labore anim dolor voluptate irure consectetur commodo dolor dolore labore ullamco. Ut tempor nisi et quis magna non.</a>
-      </h2>
-      <div class="label-ctn">
-        <label class="label"><a>Label A</a></label>
-        <label class="label"><a>Label B</a></label>
-        <label class="label"><a>Label C</a></label>
-      </div>
-    </article>
+    <section class="topic-category">
+      <h1>Categories A</h1>
+      <ng-template ngFor let-post [ngForOf]="posts">
+        <article class="topic {{ post.type }}">
+          <div class="badge-ctn" *ngIf="0 < post.badges.length">
+            <label class="badge" *ngFor="let badge of post.badges">{{ badge }}</label>
+          </div>
+          <h2>
+            <a>{{ post.title }}</a>
+          </h2>
+          <div class="tag-ctn" *ngIf="0 < post.tags.length">
+            <label class="tag" *ngFor="let label of post.tags"><a>{{ label }}</a></label>
+          </div>
+          <label class="date-post" *ngIf="'' !== post.date">|&nbsp;&nbsp;{{ post.date | date:'medium' }}</label>
+        </article>
+      </ng-template>
+    </section>
+    <section class="topic-category">
+      <h1>Categories B</h1>
+      <ng-template ngFor let-post [ngForOf]="posts">
+        <article class="topic {{ post.type }}">
+          <div class="badge-ctn" *ngIf="0 < post.badges.length">
+            <label class="badge" *ngFor="let badge of post.badges">{{ badge }}</label>
+          </div>
+          <h2>
+            <a>{{ post.title }}</a>
+          </h2>
+          <div class="tag-ctn" *ngIf="0 < post.tags.length">
+            <label class="tag" *ngFor="let label of post.tags"><a>{{ label }}</a></label>
+          </div>
+          <label class="date-post" *ngIf="'' !== post.date">|&nbsp;&nbsp;{{ post.date | date:'medium' }}</label>
+        </article>
+      </ng-template>
+    </section>
   </div>
 </main>
 

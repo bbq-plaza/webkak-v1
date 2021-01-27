@@ -71,15 +71,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
   line-height: 1;
-  color: #222;
-  background-color: #fbfbfb;
+  color: #111;
+  background-color: #fdfdfd;
 }
 
 a, .custom-link {
-  color: #03A9F4;
+  color: #03a9f4;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, .custom-link:hover {
-  color: #0091d4;
+  color: #007bff;
 }
