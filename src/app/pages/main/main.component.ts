@@ -19,8 +19,8 @@ export class MainComponent implements OnInit {
   }
 
   public async getPosts(): Promise<any> {
-    await this.postsservice.exGetPosts().then((data) => {
-      if ('20000' === data.code && data.result.length >= 0) {
+    await this.postsservice.exGetPosts().then((data: any) => {
+      if ('20000' === data.code && 0 <= data.result.length) {
         this.posts = data.result;
       }
     });

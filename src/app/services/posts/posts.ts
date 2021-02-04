@@ -1,7 +1,9 @@
 export interface Posts {
+  id: string
   title: string,
-  type: string,
-  badges: string[],
-  labels: string[],
-  date: string // Epoch timestamp in milliseconds Ex. 1611216876000
+  type?: string,
+  badges?: string[],
+  labels?: string[],
+  date?: string,
+  description?: string
 }

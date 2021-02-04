@@ -17,13 +17,14 @@
           <div class="badge-ctn" *ngIf="0 < post.badges.length">
             <label class="badge" *ngFor="let badge of post.badges">{{ badge }}</label>
           </div>
-          <h2>
-            <a>{{ post.title }}</a>
-          </h2>
-          <div class="tag-ctn" *ngIf="0 < post.tags.length">
+          <h2><a [routerLink]="['/post', post.id]">{{ post.title }}</a></h2>
+          <div class="type-ctn" *ngIf="'' !== post.type">
+            <label class="type {{ post.type }}"><a>{{ post.type }}</a></label>
+          </div>
+          <div class="tag-ctn" *ngIf="post.tags && 0 < post.tags.length">
             <label class="tag" *ngFor="let label of post.tags"><a>{{ label }}</a></label>
           </div>
-          <label class="date-post" *ngIf="'' !== post.date">|&nbsp;&nbsp;{{ post.date | date:'medium' }}</label>
+          <label class="post-date" *ngIf="'' !== post.date">|&nbsp;&nbsp;{{ post.date | date:'medium' }}</label>
         </article>
       </ng-template>
     </section>
@@ -34,13 +35,14 @@
           <div class="badge-ctn" *ngIf="0 < post.badges.length">
             <label class="badge" *ngFor="let badge of post.badges">{{ badge }}</label>
           </div>
-          <h2>
-            <a>{{ post.title }}</a>
-          </h2>
-          <div class="tag-ctn" *ngIf="0 < post.tags.length">
+          <h2><a [routerLink]="['/post', post.id]">{{ post.title }}</a></h2>
+          <div class="type-ctn" *ngIf="'' !== post.type">
+            <label class="type {{ post.type }}"><a>{{ post.type }}</a></label>
+          </div>
+          <div class="tag-ctn" *ngIf="post.tags && 0 < post.tags.length">
             <label class="tag" *ngFor="let label of post.tags"><a>{{ label }}</a></label>
           </div>
-          <label class="date-post" *ngIf="'' !== post.date">|&nbsp;&nbsp;{{ post.date | date:'medium' }}</label>
+          <label class="post-date" *ngIf="'' !== post.date">|&nbsp;&nbsp;{{ post.date | date:'medium' }}</label>
         </article>
       </ng-template>
     </section>

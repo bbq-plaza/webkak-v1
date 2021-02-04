@@ -23,4 +23,9 @@ export class PostsService {
     return await this.http.get('assets/posts.json')
     .toPromise();
   }
+
+  public async exGetPostById(request: any): Promise<any> {
+    return await this.http.get('assets/post-by-id.json')
+    .toPromise();
+  }
 }

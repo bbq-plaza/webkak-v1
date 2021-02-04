@@ -1,0 +1,17 @@
+<main>
+  <div class="container">
+    <ng-template ngFor let-post [ngForOf]="posts">
+      <section class="topic-category" *ngIf="post">
+        <h1>{{ post.title }}</h1>
+        <div class="type-ctn" *ngIf="'' !== post.type">
+          <label class="type {{ post.type }}"><a>{{ post.type }}</a></label>
+        </div>
+        <div class="tag-ctn" *ngIf="post.tags && 0 < post.tags.length">
+          <label class="tag" *ngFor="let label of post.tags"><a>{{ label }}</a></label>
+        </div>
+        <label class="post-date" *ngIf="'' !== post.date">|&nbsp;&nbsp;{{ post.date | date:'medium' }}</label>
+        <div>{{ post.description }}</div>
+      </section>
+    </ng-template>
+  </div>
+</main>

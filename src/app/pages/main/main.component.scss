@@ -45,10 +45,11 @@ main {
     }
 
     .topic {
-      margin: 17px 0 0 0;
+      margin: 15px 0 0 0;
+      position: relative;
 
       &:first-child {
-        margin: 12px 0 0 0;
+        margin: 10px 0 0 0;
       }
 
       a {
@@ -62,9 +63,9 @@ main {
 
       .badge-ctn {
         width: auto;
-        position: relative;
-        left: -6px;
-        top: -6px;
+        position: absolute;
+        top: -12px;
+        right: -7px;
 
         .badge {
           padding: 3px 6px 1px 6px;
@@ -75,6 +76,7 @@ main {
           font-size: 16px;
           color: #868686;
           display: inline-flex;
+          text-transform: capitalize;
 
           a {
             background-color: inherit;
@@ -100,40 +102,73 @@ main {
             background-color: inherit;
             font-family: 'th_sarabun_new_italic';
             font-size: 16px;
-            color: #999;
+            color: #868686;
+            text-transform: capitalize;
 
             &:hover {
-              color: #333;
+              color: #222;
             }
           }
         }
       }
 
-      .date-post {
+      .type-ctn {
+        width: auto;
+        position: relative;
+        left: -4px;
+        display: inline-flex;
+
+        .type {
+          margin: 0 4px;
+
+          a {
+            font-family: "th_sarabun_new_italic";
+            font-size: 16px;
+            color: #868686;
+            text-transform: capitalize;
+
+            &:hover {
+              color: #222;
+              background-color: unset;
+            }
+          }
+
+          &.sponsored, &.advertorial {
+            background-color: #ffd760;
+            border-radius: 3px;
+            padding: 0 3px;
+
+            a {
+              color: #666;
+
+              &:hover {
+                color: #222;
+              }
+            }
+          }
+        }
+      }
+
+      .post-date {
         font-family: 'th_sarabun_new_italic';
         font-size: 16px;
-        color: #999;
+        color: #868686;
       }
 
       &.sponsored, &.advertorial {
         background-color: rgba(255, 193, 7, 0.4);
         border: 1px solid #ffc107;
         border-radius: 3px;
-        padding: 6px 6px 0 6px;
+        padding: 7px 6px 0 6px;
 
         &:hover {
           background-color: rgba(255, 193, 7, 0.56);
         }
 
         .badge-ctn {
-          left: -13px;
-          top: -7px;
-
           .badge {
             background-color: #ffc107;
-            text-shadow: -1px 1px #e1e1e1;
-            color: #454545;
-            text-transform: capitalize;
+            color: #333;
           }
         }
 
