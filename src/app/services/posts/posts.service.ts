@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-let headers = new HttpHeaders();
-headers = headers.set('Content-Type', 'application/json; charset=utf-8');
-// headers = headers.set('Authorization', 'bearer name-a');
+const headers = new HttpHeaders()
+.set('Content-Type', 'application/json; charset=utf-8');
+// .set('Authorization', 'bearer name-a');
 
 @Injectable({
   providedIn: 'root'
