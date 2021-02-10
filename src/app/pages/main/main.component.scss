@@ -72,7 +72,7 @@ main {
           margin: 0 3px;
           background-color: #eaeaea;
           border-radius: 3px;
-          font-family: "th_sarabun_new_italic";
+          font-family: 'th_sarabun_new_italic', sans-serif;
           font-size: 16px;
           color: #868686;
           display: inline-flex;
@@ -100,7 +100,7 @@ main {
 
           a {
             background-color: inherit;
-            font-family: 'th_sarabun_new_italic';
+            font-family: 'th_sarabun_new_italic', sans-serif;
             font-size: 16px;
             color: #868686;
             text-transform: capitalize;
@@ -122,7 +122,7 @@ main {
           margin: 0 4px;
 
           a {
-            font-family: "th_sarabun_new_italic";
+            font-family: 'th_sarabun_new_italic', sans-serif;
             font-size: 16px;
             color: #868686;
             text-transform: capitalize;
@@ -150,7 +150,7 @@ main {
       }
 
       .post-date {
-        font-family: 'th_sarabun_new_italic';
+        font-family: 'th_sarabun_new_italic', sans-serif;
         font-size: 16px;
         color: #868686;
       }
