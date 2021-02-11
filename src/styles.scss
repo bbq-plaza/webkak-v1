@@ -1,61 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'reset-css';
-
-@font-face {
-  font-family: 'th_sarabun_new_bold';
-  src: url('./assets/fonts/THSarabunNew Bold.ttf');
-  src: url('./assets/fonts/THSarabunNew Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'th_sarabun_new_bold_italic';
-  src: url('./assets/fonts/THSarabunNew BoldItalic.ttf');
-  src: url('./assets/fonts/THSarabunNew BoldItalic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'th_sarabun_new_italic';
-  src: url('./assets/fonts/THSarabunNew Italic.ttf');
-  src: url('./assets/fonts/THSarabunNew Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'th_sarabun_new';
-  src: url('./assets/fonts/THSarabunNew.ttf');
-  src: url('./assets/fonts/THSarabunNew.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.th_sarabun_new_bold {
-  font-family: 'th_sarabun_new_bold';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.th_sarabun_new_bold_italic {
-  font-family: 'th_sarabun_new_bold_italic';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.th_sarabun_new_italic {
-  font-family: 'th_sarabun_new_italic';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.th_sarabun_new {
-  font-family: 'th_sarabun_new';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+// @import './assets/fonts/THSarabunNew/thsarabunnew.scss';
+@import './assets/fonts/Sarabun/sarabun.scss';
 
 html {
   box-sizing: border-box;
@@ -66,12 +12,12 @@ html {
 }
 
 body {
-  font-family: 'th_sarabun_new', sans-serif;
+  font-family: 'Sarabun-Regular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 20px;
-  line-height: 1;
-  color: #111;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #333;
   background-color: #fdfdfd;
 }
 

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'th_sarabun_new_bold';
+  src: url('./THSarabunNew Bold.ttf');
+  src: url('./THSarabunNew Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'th_sarabun_new_bold_italic';
+  src: url('./THSarabunNew BoldItalic.ttf');
+  src: url('./THSarabunNew BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'th_sarabun_new_italic';
+  src: url('./THSarabunNew Italic.ttf');
+  src: url('./THSarabunNew Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'th_sarabun_new';
+  src: url('./THSarabunNew.ttf');
+  src: url('./THSarabunNew.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.th_sarabun_new_bold {
+  font-family: 'th_sarabun_new_bold';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.th_sarabun_new_bold_italic {
+  font-family: 'th_sarabun_new_bold_italic';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.th_sarabun_new_italic {
+  font-family: 'th_sarabun_new_italic';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.th_sarabun_new {
+  font-family: 'th_sarabun_new';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
