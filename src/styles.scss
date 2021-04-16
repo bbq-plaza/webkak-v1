@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'reset-css';
+// @import './assets/fonts/THSarabunNew/thsarabunnew.scss';
+@import './assets/fonts/Sarabun/sarabun.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Sarabun-Regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+a, .custom-link {
+  color: #3691ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover, .custom-link:hover {
+  color: #0674fa;
+}

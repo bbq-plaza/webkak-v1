@@ -1,18 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { DatePipe } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
+import { MainComponent } from './pages/main/main.component';
+import { PostComponent } from './pages/post/post.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PagenotfoundComponent,
+    MainComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

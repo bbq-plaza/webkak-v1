@@ -1,0 +1,56 @@
+<header>
+  <nav class="container">
+    <p class="app-title">MyApp</p>
+    <ul class="user-profile">
+      <li><a>Login</a></li>
+      <li>Hi Guest <a>Logout</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <section class="topic-category">
+      <h1>Categories A</h1>
+      <ng-template ngFor let-post [ngForOf]="posts">
+        <article class="topic {{ post.type }}">
+          <div class="badge-ctn" *ngIf="0 < post.badges.length">
+            <label class="badge" *ngFor="let badge of post.badges">{{ badge }}</label>
+          </div>
+          <h2><a [routerLink]="['/post', post.id]">{{ post.title }}</a></h2>
+          <div class="type-ctn" *ngIf="'' !== post.type">
+            <label class="type {{ post.type }}"><a>{{ post.type }}</a></label>
+          </div>
+          <div class="tag-ctn" *ngIf="post.tags && 0 < post.tags.length">
+            <label class="tag" *ngFor="let label of post.tags"><a>{{ label }}</a></label>
+          </div>
+          <label class="post-date" *ngIf="'' !== post.date">|&nbsp;&nbsp;{{ post.date | date:'medium' }}</label>
+        </article>
+      </ng-template>
+    </section>
+    <section class="topic-category">
+      <h1>Categories B</h1>
+      <ng-template ngFor let-post [ngForOf]="posts">
+        <article class="topic {{ post.type }}">
+          <div class="badge-ctn" *ngIf="0 < post.badges.length">
+            <label class="badge" *ngFor="let badge of post.badges">{{ badge }}</label>
+          </div>
+          <h2><a [routerLink]="['/post', post.id]">{{ post.title }}</a></h2>
+          <div class="type-ctn" *ngIf="'' !== post.type">
+            <label class="type {{ post.type }}"><a>{{ post.type }}</a></label>
+          </div>
+          <div class="tag-ctn" *ngIf="post.tags && 0 < post.tags.length">
+            <label class="tag" *ngFor="let label of post.tags"><a>{{ label }}</a></label>
+          </div>
+          <label class="post-date" *ngIf="'' !== post.date">|&nbsp;&nbsp;{{ post.date | date:'medium' }}</label>
+        </article>
+      </ng-template>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>footer <a>copyright</a></p>
+  </div>
+</footer>
